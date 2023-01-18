@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-
 class Category {
   Category({required this.id, required this.title});
 
@@ -10,8 +8,8 @@ class Category {
         id: json['id'],
         title: json['attributes']['title'],
       );
-    } catch (e, s) {
-      debugPrint('$e $s');
+    } catch (e) {
+      //debugPrint('$e $s');
       return null;
     }
   }

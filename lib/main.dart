@@ -62,7 +62,6 @@ class _MyHomePageState extends State<MyHomePage> {
     });
 
     final repository = ProductRepository();
-
     print(await repository.getProducts());
   }
 
